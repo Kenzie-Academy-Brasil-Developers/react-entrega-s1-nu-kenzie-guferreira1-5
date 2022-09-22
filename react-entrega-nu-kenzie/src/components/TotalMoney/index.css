@@ -1,0 +1,39 @@
+.divTotal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 363px;
+  height: 100px;
+  background: #ffffff;
+  border: 1px solid var(--gray3);
+  border-radius: 4px;
+  margin-top: 40px;
+  padding: 10px;
+  gap: 20px;
+}
+
+.divTotal span {
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 22px;
+  color: #343a40;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+}
+
+.total > p {
+  font-weight: 900;
+  font-size: 1.2rem;
+  line-height: 30px;
+  color: var(--secundary);
+}
+
+.total p + p {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--primary);
+}

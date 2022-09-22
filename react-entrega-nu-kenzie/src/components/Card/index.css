@@ -1,0 +1,58 @@
+.card {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  animation-duration: 1.6s;
+  animation-name: card;
+}
+
+.card::before {
+  background: var(--secundary);
+  content: "";
+  width: 5px;
+  height: 100px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.saida {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  animation-duration: 1.6s;
+  animation-name: card;
+}
+
+.saida::before {
+  background: var(--gray2);
+  content: "";
+  width: 5px;
+  height: 100px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.valorCard {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.valorCard > p {
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: var(--gray1);
+}
+
+@keyframes card {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}

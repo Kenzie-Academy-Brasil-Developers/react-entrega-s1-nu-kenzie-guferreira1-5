@@ -1,0 +1,33 @@
+.divLista {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.lista {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.lista span {
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+  color: var(--gray1);
+}
+
+.lista button {
+  width: 30px;
+  height: 30px;
+  background: var(--gray3);
+  border: 2px solid var(--gray3);
+  border-radius: 2.46154px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.lista button:hover {
+  border: 2px solid var(--primary);
+}
