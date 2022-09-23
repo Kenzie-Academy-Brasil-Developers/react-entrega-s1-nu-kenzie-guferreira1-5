@@ -2,8 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 80vw;
-  height: 80vh;
+  width: 100vw;
+  height: 100vh;
   flex-wrap: wrap;
   margin: 10px auto;
 }
@@ -59,4 +59,39 @@
   line-height: 19px;
   color: #ffffff;
   cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  .principal {
+    justify-content: center;
+    align-items: center;
+    margin: -40px auto;
+  }
+
+  .divIlustracao {
+    width: 80%;
+    height: 80px;
+    margin: 0 0 150px 60px;
+  }
+
+  .ilustracao {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 770px) {
+  .container {
+    align-items: flex-start;
+    margin: 80px auto;
+  }
+
+  .divIlustracao {
+    width: 50%;
+    height: 50px;
+    margin: 0 0 100px 60px;
+  }
+
+  .ilustracao {
+    margin: 0 auto;
+  }
 }
