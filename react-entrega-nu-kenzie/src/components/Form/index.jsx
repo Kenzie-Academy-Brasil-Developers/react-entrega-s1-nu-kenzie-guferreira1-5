@@ -14,7 +14,7 @@ export const Form = ({ changePages }) => {
   const [listTransactions, setListTransactions] = useState({
     description: null,
     value: null,
-    type: null,
+    type: "entrada",
   });
 
   const [array, setArray] = useState([]);
