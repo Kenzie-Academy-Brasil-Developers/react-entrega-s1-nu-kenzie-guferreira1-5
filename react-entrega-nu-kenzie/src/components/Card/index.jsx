@@ -35,7 +35,12 @@ export const Card = ({ array, setArray, typeFilters }) => {
         : array
             .filter((item) => item.type === typeFilters)
             .map((item, index) => (
-              <li key={index} className="card">
+              <li
+                key={index}
+                className={
+                  item.type === "entrada" ? "card" : "saida"
+                }
+              >
                 <div className="valorCard">
                   <p>{item.description}</p>
                   <span>R$ {item.value} </span>
